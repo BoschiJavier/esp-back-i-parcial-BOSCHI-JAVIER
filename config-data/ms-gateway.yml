@@ -13,11 +13,11 @@ spring:
         - id: catalog
           uri: lb://api-catalog
           predicates:
-            - Path=/apicatalog/**
+            - Path=/catalog/**
         - id: music
           uri: lb://api-movie
           predicates:
-            - Path=/apimovie/**
+            - Path=/movies/**
 
 info:
   app:
